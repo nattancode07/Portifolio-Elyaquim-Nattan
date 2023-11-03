@@ -1,0 +1,48 @@
+@media (max-width: 650px) {
+  h1 {
+    font-size: 1.7em;
+  }
+
+  nav {
+    width: 300px;
+  }
+
+  nav div {
+    margin-right: 35px;
+    margin-left: 20px;
+  }
+
+  .grade-de-projetos {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto {
+    width: 350px;
+    max-width:350px;
+    height: 200px;
+  }
+
+  .projeto img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .s-m{
+   opacity: 0;
+   display: none;
+  }
+
+  .s-m-cell {
+    opacity: 1;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+  }
+
+  footer {
+    margin-top: 80px;
+    width: 300px;
+    text-align: center;
+    margin-left: 50px;
+  }
+}

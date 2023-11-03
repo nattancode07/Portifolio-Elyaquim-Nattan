@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Nyanza);
+  font-family: "Montserrat";
+}
+
+:root {
+  --dark:#343633;
+  --ligth-blue:#748CAB;
+  --white:#F0EBD8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: var(--dark);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+nav {
+  display: flex;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+  width: 800px;
+  margin-left: -70px;
+  margin-right: 20px;
+}
+
+nav div {
+  margin-right: 60px;
+}
+
+/*Redes sociais*/
+
+.s-m, .s-m-cell{
+  position: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50);
+}
+
+.s-m a, .s-m-cell a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: var(--ligth-blue);
+  color: var(--dark);
+  margin: 0 3px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 23px;
+  text-decoration:none
+}
+
+.s-m a:hover, .s-m-cell:hover{
+  background: var(--white);
+}
+
+.s-ma i, .s-m-cell i{
+  transition: 0.5 all;
+}
+
+
+.s-m-cell {
+  opacity: 0;
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+main {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
+span {
+  color: var(--ligth-blue);
+  font-size: 25px;
+}
+h1 {
+  margin-left: 40px;
+  margin-top: 30px;
+  line-height: 0.8;
+  color: var(--dark);
+  font-size: 40px;
+}
+
+.topicos-sobre-mim {
+  margin-top: 50px;
+  margin-left: 60px;
+  line-height: 2;
+  font-weight: bold;
+  color: var(--dark);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.img-div img {
+  width: 400px;
+  margin-right: 100px;
+  border-radius: 50%;
+}
+
+.conteudo-quem-sou-eu, .conteudo-oq-eu-gosto-de-fzr, .conteudo-oq-eu-quero-fzr{
+position: absolute;
+display: flex;
+border-radius: 5px;
+align-items: center;
+justify-content: center;
+padding-left: 10px;
+box-shadow: 0px 2px 6px 2px rgb(0, 0, 0, 0.3);
+opacity: 0;
+margin-top: 100px;
+width: 600px;
+height: 100px;
+pointer-events: none;
+transition: opacity 0.15s;
+}
+
+.conteudo-oq-eu-quero-fzr {
+margin-top: 10px;
+height: 230px;
+}
+
+.quem-sou-eu-li:hover + .conteudo-quem-sou-eu,
+.oq-eu-gosto-de-fzr:hover + .conteudo-oq-eu-gosto-de-fzr,
+.oq-eu-quero-fzr:hover + .conteudo-oq-eu-quero-fzr{
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
